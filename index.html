@@ -1,17 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <p>
-        Esto es un parrafo
-    </p>
+    <!---->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item">
+                    Documentation
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ------------------- CIERRE BARRA DE NAVEGACIÓN ---------------------------------->
+    <div class="container">
+        <p class="title has-text-centered">Constructora Wampu</p>
+
+        <div class="conteiner">
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <figure class="image is-128x128 is-inline-block">
+                        <img src="imagenes/mision.jpg">
+                    </figure>
+                </div>
+                <div class="column">
+                    <p class="title is-4">
+                        Misión
+                    </p>
+
+                    <p class="has-text-justified">
+                        Ser una empresa que oriente sus objetivos a entregar la mejor prestación de servicios en cada
+                        uno de sus proyectos y aplicar las normativas vigentes con el fin de garantizar la seguridad de
+                        cada uno de los usuarios.
+                    </p>
+                </div>
+            </div>
+
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <figure class="image is-128x128 is-inline-block">
+                        <img src="imagenes/vision.jpg">
+                    </figure>
+                </div>
+                <div class="column">
+                    <p class="title is-4">
+                        Visión
+                    </p>
+
+                    <p class="has-text-justified">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed cupiditate deleniti, ab minus non
+                        laudantium ex facilis quas est temporibus iste, nobis itaque consectetur tempore nulla eum
+                        dignissimos modi saepe.
+                    </p>
+                </div>
+            </div>
+
+            <p class="title has-text-centered">Servicios ofrecidos</p>
+
+            <div class="columns has-text-centered">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p class="has-text-justified">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed cupiditate deleniti,
+                                    ab minus non
+                                    laudantium ex facilis quas est temporibus iste, nobis itaque consectetur tempore
+                                    nulla eum
+                                    dignissimos modi saepe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p class="has-text-justified">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed cupiditate deleniti,
+                                    ab minus non
+                                    laudantium ex facilis quas est temporibus iste, nobis itaque consectetur tempore
+                                    nulla eum
+                                    dignissimos modi saepe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p class="has-text-justified">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed cupiditate deleniti,
+                                    ab minus non
+                                    laudantium ex facilis quas est temporibus iste, nobis itaque consectetur tempore
+                                    nulla eum
+                                    dignissimos modi saepe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">John Smith</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <p class="has-text-justified">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed cupiditate deleniti,
+                                    ab minus non
+                                    laudantium ex facilis quas est temporibus iste, nobis itaque consectetur tempore
+                                    nulla eum
+                                    dignissimos modi saepe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Portafolio de trabajo-->
+            <p class="title has-text-centered">Portafolio de trabajos</p>
+
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-8">
+                    <div class="tile">
+                        <div class="tile is-parent is-vertical">
+                            <article class="tile is-child notification is-primary">
+                                <p class="title">Vertical...</p>
+                                <p class="subtitle">Top tile</p>
+                            </article>
+                            <article class="tile is-child notification is-warning">
+                                <p class="title">...tiles</p>
+                                <p class="subtitle">Bottom tile</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-info">
+                                <p class="title">Middle tile</p>
+                                <p class="subtitle">With an image</p>
+                                <figure class="image is-4by3">
+                                    <img src="https://bulma.io/images/placeholders/640x480.png">
+                                </figure>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-danger">
+                            <p class="title">Wide tile</p>
+                            <p class="subtitle">Aligned with the right tile</p>
+                            <div class="content">
+                                <!-- Content -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-success">
+                        <div class="content">
+                            <p class="title">Tall tile</p>
+                            <p class="subtitle">With even more content</p>
+                            <div class="content">
+                                <!-- Content -->
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER-->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
+        </div>
+    </footer>
+    <!-- CIERRE FOOTER-->
 </body>
 
 </html>
